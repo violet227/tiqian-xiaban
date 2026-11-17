@@ -81,10 +81,12 @@
 
 在 [Releases](../../releases/latest) 页面下载（或自己[从源码构建](#%EF%B8%8F-从源码构建)），两个版本都是单个 exe，免安装：
 
-| 文件 | 大小 | 适用 |
-|---|---|---|
-| `提钱下班.exe` | ~0.7 MB | 已安装 [.NET 8 桌面运行时](https://dotnet.microsoft.com/download/dotnet/8.0) |
-| `提钱下班-独立版.exe` | ~69 MB | 任何 Windows 10 / 11，开箱即用，适合直接发给同事 |
+| 页面标签 | 下载文件 | 大小 | 适用 |
+|---|---|---|---|
+| 提钱下班.exe | `TiqianXiaban.exe` | ~0.7 MB | 已安装 [.NET 8 桌面运行时](https://dotnet.microsoft.com/download/dotnet/8.0) |
+| 提钱下班-独立版.exe | `TiqianXiaban-standalone.exe` | ~69 MB | 任何 Windows 10 / 11，开箱即用，适合直接发给同事 |
+
+> GitHub Release 附件名不支持中文，所以下载下来是英文文件名，页面标签仍显示中文；想用中文名直接重命名即可。自己从源码构建得到的仍是中文文件名。
 
 ### 2. 运行
 
@@ -266,7 +268,7 @@ $env:TIQIAN_MOUSETEST = "C:\temp\mousetest"; .\TiqianXiaban.exe
 <details>
 <summary><b>提示缺少 .NET 怎么办？</b></summary>
 
-装一下 [.NET 8 桌面运行时](https://dotnet.microsoft.com/download/dotnet/8.0)，或者直接改用 `提钱下班-独立版.exe`。
+装一下 [.NET 8 桌面运行时](https://dotnet.microsoft.com/download/dotnet/8.0)，或者直接改用独立版（Releases 里的 `TiqianXiaban-standalone.exe`）。
 
 </details>
 
