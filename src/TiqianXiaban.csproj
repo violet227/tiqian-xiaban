@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AssemblyName>TiqianXiaban</AssemblyName>
+    <RootNamespace>TiqianXiaban</RootNamespace>
+    <StartupObject>TiqianXiaban.Program</StartupObject>
+    <ApplicationIcon>..\assets\app.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Version>1.0.0</Version>
+    <Product>提钱下班</Product>
+    <AssemblyTitle>提钱下班</AssemblyTitle>
+    <Description>Windows 桌面悬浮卡片：把工资按秒可视化</Description>
+    <Copyright>MIT License</Copyright>
+    <!-- 界面是 WPF，DPI 由 app.manifest 声明；WinForms 只用来做托盘图标 -->
+    <NoWarn>$(NoWarn);WFAC010</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="..\assets\app.ico" LogicalName="app.ico" />
+    <EmbeddedResource Include="..\assets\coin.wav" LogicalName="coin.wav" />
+  </ItemGroup>
+
+</Project>

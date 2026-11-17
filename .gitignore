@@ -1,0 +1,10 @@
+# 编译产物与打包输出（exe 通过 GitHub Releases 分发）
+bin/
+obj/
+dev/
+dist/
+
+# 编辑器与本机临时文件
+.vs/
+*.user
+*.old
